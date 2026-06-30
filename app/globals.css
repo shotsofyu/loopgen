@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  
+  ::selection {
+    background: #4f6ef7;
+    color: white;
+  }
+
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #2a2a3a; border-radius: 3px; }
+}
+
+@layer components {
+  .glow-border {
+    box-shadow: 0 0 0 1px rgba(79, 110, 247, 0.3), 0 0 20px rgba(79, 110, 247, 0.1);
+  }
+  .card {
+    @apply bg-[#111118] border border-white/[0.06] rounded-2xl;
+  }
+  .btn-primary {
+    @apply bg-loop-500 hover:bg-loop-600 text-white font-medium px-5 py-2.5 rounded-xl transition-all duration-150 text-sm;
+  }
+  .btn-ghost {
+    @apply text-white/60 hover:text-white hover:bg-white/5 px-4 py-2 rounded-xl transition-all duration-150 text-sm;
+  }
+  .input {
+    @apply w-full bg-[#111118] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-white placeholder-white/30 outline-none focus:border-loop-500/50 focus:ring-1 focus:ring-loop-500/20 transition-all;
+  }
+  .label {
+    @apply text-xs font-medium text-white/40 uppercase tracking-widest mb-2 block;
+  }
+}
+
+/* Animated grid background */
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Charter output syntax */
+.charter-section { color: #6b8cff; font-weight: 500; }
