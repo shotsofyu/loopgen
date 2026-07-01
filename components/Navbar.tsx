@@ -12,7 +12,8 @@ export default function Navbar() {
         </Link>
 
         <div className="flex items-center gap-1">
-          <Link href="/pricing" className="btn-ghost">Pricing</Link>
+          <Link href="/blog" className="btn-ghost">Blog</Link>
+            <Link href="/pricing" className="btn-ghost">Pricing</Link>
 
           <SignedOut>
             <Link href="/sign-in" className="btn-ghost">Sign in</Link>
