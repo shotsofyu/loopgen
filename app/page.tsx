@@ -52,7 +52,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <p className="mt-5 text-white/25 text-xs">3 free charters per day · No card required</p>
+          <p className="mt-5 text-white/25 text-xs">10 free charters per day · No card required</p>
         </div>
       </section>
 

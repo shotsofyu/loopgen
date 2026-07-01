@@ -43,7 +43,7 @@ export default async function DashboardPage({
           <div className="card p-5">
             <p className="label mb-1">Used today</p>
             <p className="text-xl font-semibold text-white">{dailyUsage}</p>
-            {!isPro && <p className="text-xs text-white/30 mt-1">of 3 free</p>}
+            {!isPro && <p className="text-xs text-white/30 mt-1">of 10 free</p>}
           </div>
           <div className="card p-5">
             <p className="label mb-1">Status</p>
